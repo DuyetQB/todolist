@@ -1,7 +1,16 @@
 
-
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    width:500px;
+    border: 1px solid rgb(230, 228, 228);
+    position: relative;
+    margin: 0 auto;
+}
 #main{
     margin-left: 10rem;
+    padding:14px 17px;
+   border: 1px solid rgb(182, 175, 175);
 }
 #main-ul li{
 display: block;
@@ -14,7 +23,7 @@ padding: 10px;
     color:white;
     background: #34568b;
     cursor: pointer;
-    padding: 5px 9px;
+    padding: 15px 24px;
     border: none;
     outline: none;
 }
@@ -25,5 +34,53 @@ padding: 10px;
     padding: 0px 6px;
     background: red;
     z-index: 10;
-    
+    line-height: 26px;
+}
+
+.popup{
+    background: white;
+    box-shadow: 0 1px 5px rgb(170, 167, 167);
+     position: absolute;
+     margin-top:-100px;
+     top:0;
+     padding:20px;
+     animation: todown 0.6s ease-in-out forwards;
+     -webkit-animation: todown 0.6s ease-in-out forwards;
+}
+
+.popup::after{
+    box-shadow: 0 1px 5px rgb(170, 167, 167);
+    content:"";
+    top:-8px;
+    width:20px;
+    height:20px;
+    right:10px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.popup::before{
+    z-index: 12;
+    content:"";
+    top:0px;
+    width:40px;
+    height:20px;
+    right:0px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+  
+}
+@keyframes todown{
+    from{
+        margin-top:-100px;
+    }
+    100%{
+        margin-top:110px;
+
+    }
 }

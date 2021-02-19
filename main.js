@@ -27,12 +27,12 @@ elementBtn.addEventListener("click", function(){
        span.style.color= " white";
        span.style.cursor = "pointer";
        span.className = "close";
-      span.style.right = "30px";
+      span.style.right = "3rem";
 
 
 
       const alertElement = document.createElement("span");
-  
+    alertElement.className = "popup";
      
       
     
