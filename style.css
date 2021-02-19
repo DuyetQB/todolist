@@ -66,9 +66,9 @@ padding: 20px;
 }
 
 .popup::after{
-    box-shadow: 0 1px 5px rgb(170, 167, 167);
+    box-shadow: 0 0px 3px rgb(170, 167, 167);
     content:"";
-    top:-8px;
+    top:-6px;
     width:20px;
     height:20px;
     right:10px;
@@ -97,7 +97,7 @@ padding: 20px;
         margin-top:-100px;
     }
     100%{
-        margin-top:110px;
+        margin-top:140px;
 
     }
 }
