@@ -1,27 +1,33 @@
 
 body{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+ 
+}
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
 }
 .wrapper{
-    overflow: hidden;
-    padding: 40px;
+ 
+  margin: 40px;
     width:100%;
-    border: 1px solid rgb(230, 228, 228);
+    border: 1px dotted rgb(230, 228, 228);
     position: relative;
     margin: 0 auto;
+    height: auto;
 }
 #main{
+    margin-top: 4rem;
     margin-left: 10rem;
     padding:14px 17px;
    border: 1px solid rgb(182, 175, 175);
 }
+
 #main-ul li{
 display: block;
 cursor: pointer;
 user-select: none;
-border: 1px solid rgb(221, 221, 221);
-padding: 10px;
+border: 1px solid rgb(243, 239, 239);
+padding: 20px;
 }
 #btn{
     margin-left: 10px;
@@ -36,10 +42,16 @@ padding: 10px;
     text-decoration: line-through;
 }
 .close{
-    padding: 0px 6px;
+   
+    padding: 2px 19px;
     background: red;
     z-index: 10;
     line-height: 26px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .popup{
@@ -90,7 +102,7 @@ padding: 10px;
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
     #main{
         margin-left: 30px;
     }
