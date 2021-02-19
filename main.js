@@ -16,8 +16,10 @@ elementBtn.addEventListener("click", function(){
        ul.appendChild(newElement);
        newElement.className ="main-li";
 
-       console.log(newElement)
+      
         newElement.textContent = output;
+        //nội dung của element mới bằng output 
+        //mà output là biến chứa giá trị nhập vào 
 
        const span = document.createElement("span");
        newElement.appendChild(span);
@@ -28,12 +30,13 @@ elementBtn.addEventListener("click", function(){
        span.style.cursor = "pointer";
        span.className = "close";
       span.style.right = "3rem";
-
+//tạo ra một span dùng để click cho element biến mất và đặt tên là span 
 
 
       const alertElement = document.createElement("span");
     alertElement.className = "popup";
-     
+     //tạo một biến gọi là alertElement chứa span vừa tạo 
+     //cho nó tên class là popup 
       
     
       if(elementInput.value === ""){
@@ -44,10 +47,13 @@ elementBtn.addEventListener("click", function(){
         
         alertElement.innerHTML = "please write anything";
     }
+    //nếu giá trị trong ô input bằng chuỗi trống thì body sẽ chứa thằng alertElement 
+    //newElement lúc này bị loại bỏ ,không tạo element mới 
+    //sau đó chạy hàm notifiction 
     
 
         newElement.onclick =()=>{
-            console.log(newAdd)
+         
           
 
             if(newAdd === "click1"){
@@ -65,11 +71,12 @@ elementBtn.addEventListener("click", function(){
             newElement.remove();
         }
 
+
         
           function notification() {
             setTimeout(function(){ alertElement.remove() }, 3000);
           }
-
+//sau 3s thì hàm này sẽ đk gọi và cái alertElement sẽ biến mất 
         
 
         
