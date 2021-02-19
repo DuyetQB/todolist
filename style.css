@@ -1,0 +1,29 @@
+
+
+#main{
+    margin-left: 10rem;
+}
+#main-ul li{
+display: block;
+cursor: pointer;
+user-select: none;
+border: 1px solid rgb(221, 221, 221);
+padding: 10px;
+}
+#btn{
+    color:white;
+    background: #34568b;
+    cursor: pointer;
+    padding: 5px 9px;
+    border: none;
+    outline: none;
+}
+.click{
+    text-decoration: line-through;
+}
+.close{
+    padding: 0px 6px;
+    background: red;
+    z-index: 10;
+    
+}
